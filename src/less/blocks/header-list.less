@@ -1,0 +1,44 @@
+.header-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__item {
+  line-height: 1;
+}
+
+.header__link {
+  color: @m-color;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 1.4;
+  
+  &:hover {
+    color: darken(@m-color, 10%);
+    text-decoration: underline;
+  }
+  
+  &--orange {
+    color: #fc6633;
+    
+    &:hover {
+      color: darken(#fc6633, 10%);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .header-list {
+    &:first-of-type {
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #ddd;
+    }
+    &:nth-of-type(2) {
+      margin-right: 30px;
+    }
+  }
+}
+  

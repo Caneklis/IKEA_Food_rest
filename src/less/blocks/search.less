@@ -1,0 +1,37 @@
+.search {
+  width: 50%;
+}
+.search__input-field {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #c1c1c1;
+  }
+  
+  button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }  
+}
+
+@media @desktop-widths {
+  .search {
+    width: 415px;
+    margin-right: 75px;
+    padding-top: 4px;
+  }
+}

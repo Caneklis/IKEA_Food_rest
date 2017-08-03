@@ -1,0 +1,410 @@
+.menu {
+  margin-bottom: 20px;
+}
+
+.menu__title {
+  position: relative;
+  padding-top: 90px;
+  text-align: center;
+  font-size: 40px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 142px;
+    height: 2px;
+    background-color: #000;
+  }
+}
+
+.menu__nav {
+  padding: 0 10px;
+}
+
+.menu__nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu__nav-link {
+  text-decoration: underline;
+  color: @m-color;
+  line-height: 44px;/*
+  padding-right: 10px;*/
+}
+
+.menu_catalog {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.menu__catalog-item {
+  width: 320px;
+  padding-left: 32px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  
+  &:nth-child(1) {
+    padding-top: 343px;
+    padding-bottom: 12px;
+    background: #000 url('../img/toa-heftiba-134254.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  &:nth-child(2) {
+    padding-top: 343px;
+    padding-bottom: 12px;
+    background: #000 url('../img/austin-moncada-186841.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  &:nth-child(3) {
+    padding-top: 26px;
+    padding-bottom: 366px;
+    background: #000 url('../img/megan-savoie-232969.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  &:nth-child(4) {
+    padding-top: 26px;
+    padding-bottom: 366px;
+    background: #000 url('../img/malicki-beser-181107 (1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -30px;
+    color: #fff;
+  }
+  
+  &:nth-child(5) {
+    padding-top: 400px;
+    padding-bottom: 12px;
+    background: #000 url('../img/cala-150730 (2).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0;
+    color: #000;
+  }
+  
+  &:nth-child(6) {
+    padding-top: 30px;
+    padding-bottom: 404px;
+    background: #000 url('../img/helen-martinez-14708.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+  }
+  
+  &:nth-child(7) {
+    padding-top: 30px;
+    padding-bottom: 385px;
+    background: #000 url('../img/carissa-gan-66378.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+  }
+}
+
+.menu__catalog-price {
+  margin: 0;
+  font-size: 26px;
+}
+
+.menu__catalog-name {
+  font-size: 13px;
+  
+  b {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.menu__link {
+  display: block;
+  min-width: 320px;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #ff3305;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media @desktop-widths {
+  .menu {
+    margin-bottom: 210px;
+    padding-top: 127px;
+  }
+  
+  .menu__title {
+    margin-bottom: 70px;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      height: 40px;
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      width: 58px;
+    height: 34px;
+    background-position: -20px -824px;
+    }
+  }
+  
+  .menu__btn {
+    display: none;
+  }
+  
+  .menu__nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .menu__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 46px;
+    padding: 0;
+    padding-top: 6px;
+  }
+  
+  .manu__nav-item {
+    position: relative;
+    padding-right: 43px;
+    padding-left: 38px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    &:nth-child(2) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -20px -409px;
+    }
+    &:nth-child(3) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -20px -950px;
+    }
+    &:nth-child(4) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -20px -344px;
+    }
+    &:nth-child(5) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -13px -1008px;
+    }
+    &:nth-child(6) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -17px -173px;
+    }
+    &:nth-child(7) {
+      padding-right: 20px;
+      margin-bottom: 8px;
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -20px -464px;
+    }
+    &:nth-child(8) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -20px -756px;
+    }
+    &:nth-child(9) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -20px -240px;
+    } 
+    &:nth-child(10) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -20px -309px;
+    }    
+    &:nth-child(10) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -16px -293px;
+    }    
+    &:nth-child(11) {
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -15px -527px;
+    }    
+    &:nth-child(12) {
+      padding-right: 60px;
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      background-position: -17px -888px;
+    }
+    &:nth-child(13) {
+      padding-right: 5px;
+      font-size: 0;
+      a {
+        display: block;
+        width: 46px;
+        height: 44px;
+        outline: 1px solid #e9e9e9;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        background-position: -7px -1121px;
+        
+        &:hover {
+          outline: 2px solid #fc3508;
+          
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+    &:nth-child(14) {
+      margin-right: 0;
+      padding: 0px 5px 10px;
+      font-size: 0;
+      a {
+        display: block;
+        width: 46px;
+        height: 44px;
+        outline: 1px solid #e9e9e9;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        background-position: -7px -1062px;
+        
+        &:hover {
+          outline: 2px solid #fc3508;
+          
+          &::before {
+            display: none;
+          }
+        }
+      }      
+    }    
+  }
+  
+  .menu__nav-link {
+    text-decoration: none;
+    line-height: 44px;
+    padding-right: 0;
+    color: #000;
+  }
+
+  
+  .menu__nav-link {
+    
+    &:hover {
+      color: #fc3508;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fc3508;
+      }
+    }
+  }
+  
+  .menu_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .menu__catalog-item {
+    padding-left: 32px;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      width: 53.6%;
+      background-position: -63px -7px;/*
+      padding-top: 343px;
+      padding-bottom: 12px;
+      background: #000 url('../img/toa-heftiba-134254.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -63px -7px;
+      color: #fff;*/
+    }
+
+    &:nth-child(2) {
+      width: 44.5%;
+      background-position: -54px -24px;/*
+      padding-top: 343px;
+      padding-bottom: 12px;
+      background: #000 url('../img/austin-moncada-186841.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -54px -24px;
+      color: #fff;*/
+    }
+    
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5){
+      width: 32%;
+    }
+    
+    &:nth-child(3) {      
+      background-size: 119%;
+      background-position: -3px -30px;
+    }
+    
+    &:nth-child(4) {
+      
+    }
+    
+    &:nth-child(5) {
+      
+    }
+    
+    &:nth-child(6){
+      width: 49.1%;
+      background-position: -151px -11px;
+    }
+    
+    &:nth-child(7){
+      width: 49.1%;      
+      background-position: -4px -4px;
+    }
+  }
+}

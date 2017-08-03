@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Заголовок</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="main-container">
+    <header class="main-header">
+      <div class="logo">
+        <a href="#" class="logo__link"><img src="img/logo.png" alt="ИКЕА" width="93" height="32"></a>
+        <p class="logo__text">Добро пожаловать в ИКЕА Россия!</p>
+      </div>
+      <div class="search">
+        <form action="#" class="search__form">
+          <div class="search__input-field">
+            <input type="text" placeholder="Начать поиск...">
+            <button class="search__btn"></button>
+          </div>
+        </form>
+      </div>
+      <ul class="header-list">
+        <li class="header__item"><a class="header__link" href="#">Ближайший магазин ИКЕЯ</a></li>
+        <li class="header__item"><a class="header__link  header__link--orange" href="#">IKEA FAMILY</a></li>
+        <li class="header__item"><a class="header__link" href="#">Услуги ИКЕА</a></li>
+      </ul>
+      <ul class="header-list">
+        <li class="header__item"><a class="header__link" href="#">Список Покупок</a></li>
+        <li class="header__item"><a class="header__link" href="#">Наличие товара</a></li>
+        <li class="header__item"><a class="header__link" href="#">Вход</a></li>
+      </ul>
+      <div class="basket">
+        <span class="basket__count">199</span>
+        <a href="#" class="basket__link">Корзина</a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Все товары</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Новинки</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Кухня</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Гостиная</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Спальня</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Ванная</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Детская</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Для вашего бизнеса</a></li>
+        </ul>
+        <a href="#" class="main-nav__link">Все отделы</a>
+      </nav>
+    </header>
+    
+    <main>
+      
+      <div class="page-nav">
+        <h2 class="page-nav__title">Еда в ИКЕА</h2>
+        <ul class="page-nav__list">
+          <li class="page-nav__item"><a href="#" class="page-nav__link">Ресторан ИКЕА</a></li>
+          <li class="page-nav__item"><a href="#" class="page-nav__link">Бистро</a></li>
+          <li class="page-nav__item"><a href="#" class="page-nav__link">Магазин шведских продуктов</a></li>
+          <li class="page-nav__item"><a href="#" class="page-nav__link">Рецепты</a></li>
+          <li class="page-nav__item"><a href="#" class="page-nav__link  page-nav__link--promo">Неделя кофе в ИКЕА</a></li>
+        </ul>
+      </div>
+      
+      <section class="promo">
+        <h2 class="promo__title">Aliquam erat volutpat</h2>
+        <p class="promo__text">A soft and tender wrap with avocado, hummus and veggie balls. Pellentesque auctor lorem enim, sit amet vehicula felis egestas id</p>
+        <a href="#popular" class="promo__link">Далее</a>
+      </section>
+      
+      <section class="popular" id="popular">
+        <a href="#" class="popular__item  popular__item--promo">
+          <div class="popular__description">
+            <b class="popular__price">59.-</b>
+            <p class="popular__name"><b>Пироженное</b> <span class="popular__name-like">1240</span></p>
+            <p class="popular__name-description">с ягодами и шоколадом</p>
+            <p class="popular__name-type  popular__name-type--deserts">Десерты и выпечка</p>
+          </div>
+        </a>
+        <div class="popular__promo-description">
+          <h2 class="popular__promo-title">Lorem ipsum dolor sit amet</h2>
+          <p class="popular__promo-text">Maecenas volutpat, turpis id semper consectetur, justo nisi rutrum risus, non sodales lorem nisi in libero.</p>
+        </div>
+        <a href="#" class="popular__item">
+          <img src="img/pic-1.png" alt="" class="popular__picture">
+          <div class="popular__description">
+           <b class="popular__price">259.- <img src="img/sweden.png" alt="Шведская кухня"></b>
+            <p class="popular__name"><b>Свиная рулька</b> <span class="popular__name-like">15</span></p>
+            <p class="popular__name-description">с гарниром на выбор</p>
+            <p class="popular__name-type  popular__name-type--deserts">Основные блюда</p>
+          </div>
+        </a>
+        <a href="#" class="popular__item">
+          <img src="img/pic-2.png" alt="" class="popular__picture">
+          <div class="popular__description">
+            <b class="popular__price">139.- <img src="img/sweden.png" alt="Шведская кухня"> <img src="img/vegan.png" alt="Вегетарианское"></b>
+            <p class="popular__name"><b>Овощные фрикадельки</b> <span class="popular__name-like  popular__name-like--empty"></span></p>
+            <p class="popular__name-description">с гарниром из киноа</p>
+            <p class="popular__name-type  popular__name-type--deserts">Основные блюда</p>
+          </div>
+        </a>
+        <a href="#" class="popular__item">
+          <img src="img/pic-3.png" alt="" class="popular__picture">
+          <div class="popular__description">
+            <b class="popular__price">259.- <img src="img/sweden.png" alt="Шведская кухня"></b>
+            <p class="popular__name"><b>Филе лосося</b> <span class="popular__name-like">1 584</span></p>
+            <p class="popular__name-description">с гарниром</p>
+            <p class="popular__name-type  popular__name-type--deserts">Основные блюда</p>
+          </div>
+        </a>
+      </section>
+      
+      <section class="menu">
+        <h2 class="menu__title">Меню</h2>
+        <div class="menu__nav">
+          <p class="menu__nav-text">Категории блюда</p>
+          <ul class="menu__nav-list">
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Все</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Основные блюда</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Салаты и закуски</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Десерты и выпечка</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Супы</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Хлеб</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Напитки</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Горячие снэки</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Завтрак</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Комбинация</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Детское и семейное меню</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link">Разное</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link  menu__nav-link--vegan">Вегетарианское</a></li>
+            <li class="manu__nav-item"><a href="#" class="menu__nav-link  menu__nav-link--sweden">Шведская кухня</a></li>
+          </ul>
+        </div>
+        <ul class="menu_catalog">
+          <li class="menu__catalog-item">
+            <div class="menu__catalog-description">
+              <p class="menu__catalog-price"><b>139.-</b></p>
+              <p class="menu__catalog-name"><b>Ореховый торт</b><br>с карамелью</p>
+            </div>
+          </li>
+          <li class="menu__catalog-item">
+            <div class="menu__catalog-description">
+              <p class="menu__catalog-price"><b>79.-</b></p>
+              <p class="menu__catalog-name"><b>Кекс</b><br>с начинкой</p>
+            </div>
+          </li>
+          <li class="menu__catalog-item">
+            <div class="menu__catalog-description">
+              <p class="menu__catalog-price"><b>79.-</b></p>
+              <p class="menu__catalog-name"><b>Вафли</b><br>с сиропом</p>
+            </div>
+          </li>
+          <li class="menu__catalog-item">
+            <div class="menu__catalog-description">
+              <p class="menu__catalog-price"><b>189.-</b></p>
+              <p class="menu__catalog-name"><b>Вафли</b><br>с сиропом</p>
+            </div>
+          </li>
+          <li class="menu__catalog-item">
+            <div class="menu__catalog-description">
+              <p class="menu__catalog-price"><b>129.-</b> <img src="img/vegan.png" alt=""></p>
+              <p class="menu__catalog-name"><b>Каша тыквенная</b></p>
+            </div>
+          </li>
+          <li class="menu__catalog-item">
+            <div class="menu__catalog-description">
+              <p class="menu__catalog-price"><b>89.-</b></p>
+              <p class="menu__catalog-name"><b>Сэндвич</b><br>с лососем</p>
+            </div>
+          </li>
+          <li class="menu__catalog-item">
+            <div class="menu__catalog-description">
+              <p class="menu__catalog-price"><b>189.-</b></p>
+              <p class="menu__catalog-name"><b>Завтрак</b><br>2 яичницы,<br>тост и овощи</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="menu__link">Все меню +</a>
+      </section>
+      
+      <section class="recipes">
+        <h2 class="recipes__title">Curabitur malesuada</h2>
+        <div class="recipes__photo">
+          <div class="recipes__photo-description">
+            <p class="recipes__photo-cost"><b>189.-</b></p>
+            <p class="recipes__photo-name"><b>Филе лосося</b><br>с овощами<br>и сливочным соусом</p>
+          </div>
+        </div>
+        <div class="recipes__article">
+          <div class="recipes__article-photo"></div>
+          <div class="recipes__article-description">
+            <h3 class="recipes__article-title">Aenean<br>sed tincidunt</h3>
+            <p class="recipes__article-text">Sed rutrum vehicula nisl, nec consectetur enim condimentum vel. Vestibulum quis consequat enim, porttitor viverra dolor. Sed ut laoreet turpis. Quisque odio velit, finibus sit amet magna ut, volutpat pulvinar purus. Ut faucibus dui quis dictum hendrerit. </p>
+            <p class="recipes__article-text">Maecenas volutpat, turpis id semper consectetur, justo nisi rutrum risus, non sodales lorem nisi in libero. Ut faucibus dui quis dictum hendrerit. Pellentesque aliquet elit id velit fermentum.Curabitur dapibus sollicitudin magna id sagittis. Maecenas in lorem mollis orci.</p>
+          </div>
+          <div class="recipes__catalog-item">
+            <div class="recipes__catalog-picture"></div>
+            <div class="recipes__catalog-description">
+              <b class="recipes__catalog-price">259.- <img src="img/sweden.png" alt="Шведская кухня"></b>
+              <p class="recipes__catalog-name"><b>Филе лосося</b> <span class="popular__name-like">15</span></p>
+              <p class="recipes__catalog-name-description">с гарниром</p>
+              <p class="recipes__catalog-name-type  recipes__catalog-name-type--deserts">Основные блюда</p>
+            </div>
+          </div>
+          <div class="recipes__promo-photo">
+            <p class="recipes__promo-text">Quisque</p>
+            <p class="recipes__promo-text">commodo</p>
+            <p class="recipes__promo-text">turpis</p>
+          </div>
+          <div class="recipes__link">
+            <a href="#" class="recipes__link-wrapper">
+              <p class="recipes__link-text">Рецепт</p>
+              <p class="recipes__link-text"><b>Лосось с рисом<br>и куркумой</b></p>
+              <p class="recipes__link-text"><img src="img/time-icon.png" alt="">1Ч 40МИН <img src="img/12312.png" alt="">3 ПОРЦИИ</p>
+            </a>
+            <a href="#" class="recipes__more-link">Больше рецептов <img src="img/arrow-white.png" alt=""></a>            
+          </div>
+          <div class="recipes__other-article">
+            <h3 class="recipes__other-article-title">Maecenas eget<br>interdum dolor</h3>
+            <p class="recipes__other-article-text">Maecenas volutpat, turpis id semper consectetur, justo nisi rutrum risus, non sodales lorem nisi in libero. Ut faucibus dui quis dictum hendrerit. Pellentesque aliquet elit id velit fermentum consequat.In vitae rutrum quam. Donec scelerisque tristique arcu non interdum. Sed rutrum vehicula nisl, nec consectetur enim condimentum vel. Vestibulum quis consequat enim, porttitor.
+            </p>
+            <a href="#" class="recipes__other-article-link">Phasellus faucibus ornare <img src="img/arrow-orange.png" alt=""></a>
+          </div>
+          
+        </div>
+      </section>
+      
+    </main>
+    
+    <footer class="main-footer">
+      
+      <ul class="main-footer__list">
+        <li class="main-footer__item"><a href="#" class="main-footer__link"><b>Каталог ИКЕА 2017</b></a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Посмотреть каталог онлайн</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Заказать Каталог по почте</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Брошюры ИКЕА</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Руководства по покупке</a></li>
+      </ul>
+      <ul class="main-footer__list">
+        <li class="main-footer__item"><a href="#" class="main-footer__link"><b>Услуги ИКЕА</b></a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Наличие товара</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Возврат товара</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Доставка</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Сборка</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">ИКЕА в кредит</a></li>
+      </ul>
+      <ul class="main-footer__list">
+        <li class="main-footer__item"><a href="#" class="main-footer__link"><b>Все об ИКЕА</b></a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Демократический дизайн</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Группа компаний ИКЕА</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Работа в группе компаний<br>ИКЕА</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Люди и планета</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Благотворительный фонд ИКЕА</a></li>
+      </ul>
+      <ul class="main-footer__list">
+        <li class="main-footer__item"><a href="#" class="main-footer__link"><b>Работа в ИКЕА</b></a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Обратитесь сейчас</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link"><b>Клуб IKEA FAMILY</b></a></li>
+      </ul>
+      <ul class="main-footer__list">
+        <li class="main-footer__item"><a href="#" class="main-footer__link"><b>Пресс-служба</b></a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Пресс-релизы</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Отзывы товаров</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Отчеты и документы</a></li>
+      </ul>
+      <ul class="main-footer__list">
+        <li class="main-footer__item"><a href="#" class="main-footer__link"><b>Свяжитесь с нами</b></a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Контакты</a></li>
+        <li class="main-footer__item"><a href="#" class="main-footer__link">Адреса магазинов</a></li>
+      </ul>
+      
+      <p class="main-footer__copyright">&copy; Inter IKEA Systems B.V. 1999 - 2017
+        <a href="#">Юридическая информация</a>
+        <a href="#">Согласие на обработку данных</a>
+        <a href="#">Информация для потребителей о мебельной продукции</a>
+      </p>
+      
+    </footer>
+    
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Layer-8 {
+    width: 84px;
+    height: 57px;
+    background-position: -20px -20px;
+}
+
+.sprite-basket {
+    width: 28px;
+    height: 25px;
+    background-position: -20px -117px;
+}
+
+.sprite-bread-icon {
+    width: 23px;
+    height: 23px;
+    background-position: -20px -182px;
+}
+
+.sprite-breakfast-icon {
+    width: 32px;
+    height: 24px;
+    background-position: -20px -245px;
+}
+
+.sprite-combo-icon {
+    width: 25px;
+    height: 10px;
+    background-position: -20px -309px;
+}
+
+.sprite-deserts-icon {
+    width: 28px;
+    height: 14px;
+    background-position: -20px -359px;
+}
+
+.sprite-dish_1 {
+    width: 27px;
+    height: 25px;
+    background-position: -20px -413px;
+}
+
+.sprite-drinks-icon {
+    width: 21px;
+    height: 15px;
+    background-position: -20px -478px;
+}
+
+.sprite-family-icon {
+    width: 21px;
+    height: 22px;
+    background-position: -20px -533px;
+}
+
+.sprite-like-icon {
+    width: 13px;
+    height: 12px;
+    background-position: -20px -595px;
+}
+
+.sprite-like_3 {
+    width: 15px;
+    height: 15px;
+    background-position: -20px -647px;
+}
+
+.sprite-main-food-icon {
+    width: 27px;
+    height: 18px;
+    background-position: -20px -702px;
+}
+
+.sprite-main-icon {
+    width: 26px;
+    height: 24px;
+    background-position: -20px -760px;
+}
+
+.sprite-menu-icon {
+    width: 58px;
+    height: 34px;
+    background-position: -20px -824px;
+}
+
+.sprite-other-icon {
+    width: 21px;
+    height: 19px;
+    background-position: -20px -898px;
+}
+
+.sprite-salats-icon {
+    width: 22px;
+    height: 25px;
+    background-position: -20px -957px;
+}
+
+.sprite-soup-icon {
+    width: 22px;
+    height: 14px;
+    background-position: -20px -1022px;
+}
+
+.sprite-sweden {
+    width: 26px;
+    height: 16px;
+    background-position: -20px -1076px;
+}
+
+.sprite-vegan {
+    width: 20px;
+    height: 21px;
+    background-position: -20px -1132px;
+}
