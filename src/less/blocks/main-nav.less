@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
   width: 100%;
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   background-color: @m-color;
 }
 
@@ -57,7 +57,9 @@
 .main-nav__item {
   .main-nav__link {
     display: block;
-    padding: 7px 0;
+    padding: 10px 0;
+    font-weight: bold;
+    letter-spacing: -0.5px;
   }
   .main-nav__link:hover {
     background-color: darken(@m-color, 10%);
@@ -68,36 +70,43 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
   text-align: center;
   display: none;
   
   &--opened {
     display: block;
+    padding-top: 35px;
   }
 }
 
 .main-nav__link {
   display: block;
-  padding: 5px 0;
+  padding: 10px 0;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
+  
+  &:hover {
+    background-color: darken(@m-color, 10%);
+  }
 }
 
 @media @desktop-widths {
   .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    float: left;
+    width: 100%;
     padding: 0 20px;
+    box-sizing: border-box;
+    .clearfix();
   }
   
   .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    float: left;
+    width: 920px;
     padding: 0;
+    text-align: left;
   }
   
   .main-nav__toggle {
@@ -105,15 +114,28 @@
   }
   
   .main-nav__item {
-    margin-right: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 23px;
     
     &:last-child {
       margin-right: 0;
     }
+    
+    .main-nav__link {
+      padding: 6px 0 8px;
+    }
   }
   
   .main-nav__link {
-    padding: 0;
+    padding: 6px 0 8px;
+    letter-spacing: -0.5px;
+    
+    &--all {
+      float: right;
+      width: 85px;
+      text-align: right;
+    }
     font-size: 12px;
   }
 }

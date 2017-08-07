@@ -1,7 +1,4 @@
 .popular {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding: 10px 20px;
   text-align: center;
 }
@@ -25,6 +22,7 @@
 .popular__item {
   display: block;
   margin-bottom: 10px;
+  padding-top: 200px;
   text-decoration: none;
   color: #000;
   box-sizing: border-box;
@@ -37,6 +35,24 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+  
+  &:nth-of-type(2) {
+      background-image: url('../img/pic-1.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    
+    &:nth-of-type(3) {
+      background-image: url('../img/pic-2.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    
+    &:nth-of-type(4) {
+      background-image: url('../img/pic-3.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
   
   &:hover {
     outline: 3px solid #000;
@@ -69,6 +85,8 @@
 }
 
 .popular__name-type {
+  display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding-left: 35px;
   padding-bottom: 2px;
@@ -85,20 +103,20 @@
 }
 @media @desktop-widths {
   .popular {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    .clearfix();
     padding-top: 180px;
     text-align: left;
   }
   
   .popular__price {
     font-size: 26px;
-    line-height: 38px;
+    line-height: 39px;
   }
   
   .popular__item {
+    float: left;
     width: 340px;
+    padding-top: 217px;
     text-align: center;
     /*margin-right: 10px;
     padding-left: 40px;
@@ -112,14 +130,39 @@
       padding-left: 385px;
       padding-right: 0;
       padding-bottom: 180px;
-      background-size: 75%;
+      background-size: 74%;
       text-align: left;
-      background-position: -17px -33px;
+      background-position: -27px -26px;
+      box-sizing: border-box;
       
       .popular__description {
         text-align: left;
         padding-top: 0;
         padding-left: 0;
+      }
+    }
+    
+    &:nth-of-type(2) {
+      background-position: 37px -15px;
+      
+      .popular__description {
+        padding-left: 80px;
+      }
+    }
+    
+    &:nth-of-type(3) {
+      background-position: 72px 0px;
+      
+      .popular__description {
+        padding-left: 70px;
+      }
+    }
+    
+    &:nth-of-type(4) {
+      background-position: 60px 0px;
+      
+      .popular__description {
+        padding-left: 88px;
       }
     }
     
@@ -129,6 +172,7 @@
   }
   
   .popular__promo-description {
+    float: right;
     width: 320px;
     
     &::before {
